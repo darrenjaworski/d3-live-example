@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bar Chart...</title>
+  <style>
+    #chart {
+      width: 500px;
+    }
+
+    .bar {
+      background-color: steelblue;
+      text-align: right;
+      padding: 8px;
+      margin: 2px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="chart"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+  <script>
+
+    let data = [2, 20, 4, 16, 28, 40];
+    let chart = d3.select('#chart');
+
+    // scale
+
+    // update function
+    function update(data) {
+
+      // join
+      let bar = chart.selectAll('.bar')
+        .data(data);
+
+      // exit
+
+      // update
+
+
+      // enter
+
+
+    }
+
+    update(data);
+
+    // setInterval...
+
+  </script>
+</body>
+
+</html>
